@@ -3,7 +3,9 @@ package springmvc.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,5 +37,17 @@ public class HomeController {
     public String about(){
         System.out.println("This is about controller request url!!");
         return "about";
+    }
+
+    @RequestMapping("/help")
+    public ModelAndView help(){
+        System.out.println("This is help controller request url!!");
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("skill_1","Java Developer");
+        modelAndView.addObject("skill_2","DSA");
+        LocalDateTime now = LocalDateTime.now();
+        modelAndView.addObject("time",now);
+        modelAndView.setViewName("help");
+        return modelAndView;
     }
 }
