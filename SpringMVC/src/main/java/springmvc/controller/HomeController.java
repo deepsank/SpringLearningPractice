@@ -47,6 +47,14 @@ public class HomeController {
         modelAndView.addObject("skill_2","DSA");
         LocalDateTime now = LocalDateTime.now();
         modelAndView.addObject("time",now);
+
+        List<String> superheroes = new ArrayList<>();
+        superheroes.add("Bruce Wayne-- Batman");
+        superheroes.add("Peter Parker-- Spiderman");
+        superheroes.add("Shaktiman");
+        superheroes.add("Superman");
+        superheroes.add("Flash");
+        modelAndView.addObject("superheroes", superheroes);
         modelAndView.setViewName("help");
         return modelAndView;
     }
