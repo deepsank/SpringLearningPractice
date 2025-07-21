@@ -62,8 +62,16 @@ public class RegistrationController {
     @RequestMapping(path="/processRegistration", method = RequestMethod.POST)
     public String handleProcessRegistrationForm(@ModelAttribute User user, Model model){
         System.out.println(user);
-        this.userService.registerUser(user);
+        if(user.getUserName().isBlank() || user.getEmail().isBlank() || user.getPassword().isBlank()){
+            model.addAttribute("msg","User details not proper, enter correct details.");
+            return "redirect:/registration";
+        }
+
+            this.userService.registerUser(user);
+
+
         model.addAttribute("msg","User registered successfully!!!");
+
         return "registrationSuccess"; // This should return the view name for the registration success page
     }
 
