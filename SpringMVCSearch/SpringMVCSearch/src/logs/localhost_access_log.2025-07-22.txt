@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [22/Jul/2025:01:08:24 +0530] "GET /SpringMVCSearch/home HTTP/1.1" 200 1351
+0:0:0:0:0:0:0:1 - - [22/Jul/2025:01:08:38 +0530] "GET /SpringMVCSearch/search?querybox=Jagdeep+Dhankhad HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Jul/2025:01:08:56 +0530] "GET /SpringMVCSearch/search?querybox=Hello+World HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Jul/2025:01:11:04 +0530] "GET /SpringMVCSearch HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Jul/2025:01:11:05 +0530] "GET /SpringMVCSearch/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Jul/2025:01:11:06 +0530] "GET /SpringMVCSearch/home HTTP/1.1" 200 1351
+0:0:0:0:0:0:0:1 - - [22/Jul/2025:01:11:21 +0530] "GET /SpringMVCSearch/search?querybox=Deepak+Kumar+Upadhyay+AIT HTTP/1.1" 302 -
