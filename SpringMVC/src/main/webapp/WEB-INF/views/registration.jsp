@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 pageEncoding="ISO-8859-1"%>
+<%@ page isELIgnored="false" %>
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,7 +11,10 @@ pageEncoding="ISO-8859-1"%>
   </head>
   <body>
   <div class="container mt-5">
+  <h1>${Header}</h1>
+      <p>${Description}</p>
     <h1>Registration Form</h1>
+
     <form action="processRegistration" method="post" autocomplete="off">
   <div class="mb-3">
     <label for="userEmail" class="form-label">Email address</label>

@@ -11,11 +11,16 @@ pageEncoding="ISO-8859-1"%>
   </head>
   <body>
   <div class="container mt-5">
+  <h1>${Header}</h1>
+    <p>${Description}</p>
     <h1>Registration Successful!</h1>
-    <p class="lead">Thank you for registering, ${userName}. You can now log in with your credentials.</p>
-    <p class="text-muted">A confirmation email has been sent to ${email}.</p>
+    <h1 style="color: green;">${msg}</h1>
+
+    <%-- <p class="lead">Thank you for registering, ${userName}. You can now log in with your credentials.</p> --%>
+    <p class="lead">Thank you for registering, ${user.userName}. You can now log in with your credentials.</p>
+    <p class="text-muted">A confirmation email has been sent to ${user.email}.</p>
     <p class="text-success">Welcome to our platform!</p>
-    <p>Your password is ${password}. Please keep it secure.</p>
+    <p>Your password is ${user.password}. Please keep it secure.</p>
     <a href="login.jsp" class="btn btn-primary">Go to Login</a>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
