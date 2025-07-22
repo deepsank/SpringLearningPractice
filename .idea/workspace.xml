@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ad648bf-ced3-456d-ada1-4bb8bde499e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SpringLearningPractice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -62,7 +46,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Smart Tomcat.SpringMVC.executor&quot;: &quot;Run&quot;,
     &quot;Smart Tomcat.Tomcat: SpringMVCSearch.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/Backend_java/Leaning_Practice/SpringCorePractice/SpringLearningPractice/SpringMVC/src/main/webapp/WEB-INF&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -71,6 +55,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.springMvcSearch" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVC\src\main\webapp\WEB-INF" />
     </key>
