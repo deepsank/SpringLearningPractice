@@ -1,0 +1,294 @@
+24-Jul-2025 11:28:15.509 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+24-Jul-2025 11:28:15.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+24-Jul-2025 11:28:15.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+24-Jul-2025 11:28:15.515 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jul-2025 11:28:15.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jul-2025 11:28:15.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2025 11:28:15.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+24-Jul-2025 11:28:15.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.6+8-LTS-188
+24-Jul-2025 11:28:15.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2025 11:28:15.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:28:15.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:28:15.525 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jul-2025 11:28:15.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jul-2025 11:28:15.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jul-2025 11:28:15.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jul-2025 11:28:15.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jul-2025 11:28:15.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:28:15.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:28:15.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\temp
+24-Jul-2025 11:28:15.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\logging.properties
+24-Jul-2025 11:28:15.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2025 11:28:15.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\lib\idea_rt.jar=51467
+24-Jul-2025 11:28:15.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+24-Jul-2025 11:28:15.527 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+24-Jul-2025 11:28:15.528 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+24-Jul-2025 11:28:15.613 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.9] using APR version [1.7.6].
+24-Jul-2025 11:28:15.622 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.0 8 Apr 2025]
+24-Jul-2025 11:28:15.950 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:28:15.973 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [743] milliseconds
+24-Jul-2025 11:28:16.037 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jul-2025 11:28:16.037 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+24-Jul-2025 11:28:16.048 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml]
+24-Jul-2025 11:28:17.659 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Jul-2025 11:28:17.750 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml] has finished in [1,701] ms
+24-Jul-2025 11:28:17.754 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:28:17.779 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1804] milliseconds
+24-Jul-2025 11:28:26.081 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'spring'
+24-Jul-2025 11:28:28.088 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 2005 ms
+24-Jul-2025 11:32:05.773 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:32:05.786 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jul-2025 11:32:05.807 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:32:05.815 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:32:07.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+24-Jul-2025 11:32:07.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+24-Jul-2025 11:32:07.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+24-Jul-2025 11:32:07.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jul-2025 11:32:07.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jul-2025 11:32:07.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2025 11:32:07.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+24-Jul-2025 11:32:07.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.6+8-LTS-188
+24-Jul-2025 11:32:07.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2025 11:32:07.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:32:07.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:32:07.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jul-2025 11:32:07.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jul-2025 11:32:07.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jul-2025 11:32:07.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jul-2025 11:32:07.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jul-2025 11:32:07.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:32:07.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:32:07.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\temp
+24-Jul-2025 11:32:07.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\logging.properties
+24-Jul-2025 11:32:07.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2025 11:32:07.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\lib\idea_rt.jar=51596
+24-Jul-2025 11:32:07.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+24-Jul-2025 11:32:07.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+24-Jul-2025 11:32:07.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+24-Jul-2025 11:32:07.658 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.9] using APR version [1.7.6].
+24-Jul-2025 11:32:07.665 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.0 8 Apr 2025]
+24-Jul-2025 11:32:08.033 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:32:08.058 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [728] milliseconds
+24-Jul-2025 11:32:08.122 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jul-2025 11:32:08.122 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+24-Jul-2025 11:32:08.135 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml]
+24-Jul-2025 11:32:09.745 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Jul-2025 11:32:09.833 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml] has finished in [1,697] ms
+24-Jul-2025 11:32:09.837 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:32:09.862 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1800] milliseconds
+24-Jul-2025 11:32:25.144 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'spring'
+24-Jul-2025 11:32:26.963 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 1818 ms
+24-Jul-2025 11:32:27.016 WARNING [http-nio-8080-exec-5] org.springframework.web.servlet.DispatcherServlet.noHandlerFound No mapping for GET /SpringMVCSearch/home
+24-Jul-2025 11:32:27.062 WARNING [http-nio-8080-exec-5] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.handleNoHandlerFoundException No endpoint GET /SpringMVCSearch/home.
+24-Jul-2025 11:33:08.335 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:33:08.350 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jul-2025 11:33:08.361 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:33:08.384 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:33:13.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+24-Jul-2025 11:33:13.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+24-Jul-2025 11:33:13.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+24-Jul-2025 11:33:13.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jul-2025 11:33:13.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jul-2025 11:33:13.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2025 11:33:13.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+24-Jul-2025 11:33:13.587 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.6+8-LTS-188
+24-Jul-2025 11:33:13.587 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2025 11:33:13.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:33:13.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\temp
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\logging.properties
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2025 11:33:13.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\lib\idea_rt.jar=51671
+24-Jul-2025 11:33:13.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+24-Jul-2025 11:33:13.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+24-Jul-2025 11:33:13.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+24-Jul-2025 11:33:13.645 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.9] using APR version [1.7.6].
+24-Jul-2025 11:33:13.649 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.0 8 Apr 2025]
+24-Jul-2025 11:33:13.928 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:33:13.943 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [547] milliseconds
+24-Jul-2025 11:33:14.005 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jul-2025 11:33:14.005 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+24-Jul-2025 11:33:14.018 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml]
+24-Jul-2025 11:33:15.537 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Jul-2025 11:33:15.628 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml] has finished in [1,609] ms
+24-Jul-2025 11:33:15.633 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:33:15.660 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1715] milliseconds
+24-Jul-2025 11:33:20.446 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'spring'
+24-Jul-2025 11:33:22.888 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 2441 ms
+24-Jul-2025 11:40:11.054 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:40:11.075 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jul-2025 11:40:11.104 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:40:11.125 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:40:13.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+24-Jul-2025 11:40:13.561 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+24-Jul-2025 11:40:13.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+24-Jul-2025 11:40:13.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jul-2025 11:40:13.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jul-2025 11:40:13.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2025 11:40:13.563 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+24-Jul-2025 11:40:13.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.6+8-LTS-188
+24-Jul-2025 11:40:13.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2025 11:40:13.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:40:13.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:40:13.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jul-2025 11:40:13.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jul-2025 11:40:13.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jul-2025 11:40:13.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jul-2025 11:40:13.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jul-2025 11:40:13.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:40:13.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:40:13.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\temp
+24-Jul-2025 11:40:13.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\logging.properties
+24-Jul-2025 11:40:13.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2025 11:40:13.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\lib\idea_rt.jar=51866
+24-Jul-2025 11:40:13.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+24-Jul-2025 11:40:13.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+24-Jul-2025 11:40:13.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+24-Jul-2025 11:40:13.584 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.9] using APR version [1.7.6].
+24-Jul-2025 11:40:13.589 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.0 8 Apr 2025]
+24-Jul-2025 11:40:13.905 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:40:13.921 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [591] milliseconds
+24-Jul-2025 11:40:13.984 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jul-2025 11:40:13.984 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+24-Jul-2025 11:40:13.995 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml]
+24-Jul-2025 11:40:15.616 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Jul-2025 11:40:15.706 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml] has finished in [1,710] ms
+24-Jul-2025 11:40:15.709 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:40:15.735 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1813] milliseconds
+24-Jul-2025 11:40:20.936 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'spring'
+24-Jul-2025 11:40:22.076 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 1137 ms
+24-Jul-2025 11:41:36.261 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:41:36.274 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jul-2025 11:41:36.288 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:41:36.300 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:41:37.829 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+24-Jul-2025 11:41:37.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+24-Jul-2025 11:41:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+24-Jul-2025 11:41:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jul-2025 11:41:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jul-2025 11:41:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2025 11:41:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+24-Jul-2025 11:41:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.6+8-LTS-188
+24-Jul-2025 11:41:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2025 11:41:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:41:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:41:37.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jul-2025 11:41:37.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jul-2025 11:41:37.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jul-2025 11:41:37.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jul-2025 11:41:37.855 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jul-2025 11:41:37.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:41:37.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:41:37.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\temp
+24-Jul-2025 11:41:37.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\logging.properties
+24-Jul-2025 11:41:37.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2025 11:41:37.856 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\lib\idea_rt.jar=51896
+24-Jul-2025 11:41:37.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+24-Jul-2025 11:41:37.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+24-Jul-2025 11:41:37.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+24-Jul-2025 11:41:37.861 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.9] using APR version [1.7.6].
+24-Jul-2025 11:41:37.869 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.0 8 Apr 2025]
+24-Jul-2025 11:41:38.194 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:41:38.216 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [633] milliseconds
+24-Jul-2025 11:41:38.284 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jul-2025 11:41:38.284 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+24-Jul-2025 11:41:38.301 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml]
+24-Jul-2025 11:41:39.863 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Jul-2025 11:41:39.952 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml] has finished in [1,650] ms
+24-Jul-2025 11:41:39.955 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:41:39.980 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1763] milliseconds
+24-Jul-2025 11:43:28.926 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:43:28.945 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jul-2025 11:43:28.961 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:43:28.980 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:43:31.962 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+24-Jul-2025 11:43:31.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+24-Jul-2025 11:43:31.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+24-Jul-2025 11:43:31.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jul-2025 11:43:31.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jul-2025 11:43:31.969 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2025 11:43:31.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+24-Jul-2025 11:43:31.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.6+8-LTS-188
+24-Jul-2025 11:43:31.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2025 11:43:31.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:43:31.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:43:31.985 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jul-2025 11:43:31.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jul-2025 11:43:31.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jul-2025 11:43:31.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jul-2025 11:43:31.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jul-2025 11:43:31.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:43:31.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:43:31.986 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\temp
+24-Jul-2025 11:43:31.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\logging.properties
+24-Jul-2025 11:43:31.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2025 11:43:31.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\lib\idea_rt.jar=51980
+24-Jul-2025 11:43:31.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+24-Jul-2025 11:43:31.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+24-Jul-2025 11:43:31.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+24-Jul-2025 11:43:31.991 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.9] using APR version [1.7.6].
+24-Jul-2025 11:43:32.000 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.0 8 Apr 2025]
+24-Jul-2025 11:43:32.451 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:43:32.475 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [809] milliseconds
+24-Jul-2025 11:43:32.538 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jul-2025 11:43:32.538 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+24-Jul-2025 11:43:32.552 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml]
+24-Jul-2025 11:43:34.291 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Jul-2025 11:43:34.419 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml] has finished in [1,866] ms
+24-Jul-2025 11:43:34.422 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:43:34.447 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1969] milliseconds
+24-Jul-2025 11:43:37.588 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'spring'
+24-Jul-2025 11:43:38.708 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 1119 ms
+24-Jul-2025 11:48:36.245 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:48:36.260 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jul-2025 11:48:36.275 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:48:36.301 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:48:38.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.43
+24-Jul-2025 11:48:38.011 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 1 2025 21:30:20 UTC
+24-Jul-2025 11:48:38.012 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.43.0
+24-Jul-2025 11:48:38.012 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+24-Jul-2025 11:48:38.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Jul-2025 11:48:38.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Jul-2025 11:48:38.013 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21
+24-Jul-2025 11:48:38.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.6+8-LTS-188
+24-Jul-2025 11:48:38.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Jul-2025 11:48:38.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:48:38.014 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:48:38.030 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Jul-2025 11:48:38.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-Jul-2025 11:48:38.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-Jul-2025 11:48:38.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Jul-2025 11:48:38.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Jul-2025 11:48:38.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Program Files\apache_tomcat\apache-tomcat-10.1.43
+24-Jul-2025 11:48:38.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src
+24-Jul-2025 11:48:38.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\temp
+24-Jul-2025 11:48:38.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\logging.properties
+24-Jul-2025 11:48:38.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Jul-2025 11:48:38.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\lib\idea_rt.jar=52284
+24-Jul-2025 11:48:38.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+24-Jul-2025 11:48:38.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stdout.encoding=UTF-8
+24-Jul-2025 11:48:38.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.stderr.encoding=UTF-8
+24-Jul-2025 11:48:38.035 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.9] using APR version [1.7.6].
+24-Jul-2025 11:48:38.043 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.0 8 Apr 2025]
+24-Jul-2025 11:48:38.423 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:48:38.454 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [672] milliseconds
+24-Jul-2025 11:48:38.515 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-Jul-2025 11:48:38.515 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.43]
+24-Jul-2025 11:48:38.529 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml]
+24-Jul-2025 11:48:40.201 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Jul-2025 11:48:40.295 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\conf\Catalina\localhost\SpringMVCSearch.xml] has finished in [1,765] ms
+24-Jul-2025 11:48:40.298 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:48:40.323 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1866] milliseconds
+24-Jul-2025 11:48:40.733 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'spring'
+24-Jul-2025 11:48:41.819 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 1085 ms
+24-Jul-2025 11:49:55.874 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:49:55.899 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-Jul-2025 11:49:55.921 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-Jul-2025 11:49:55.927 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
