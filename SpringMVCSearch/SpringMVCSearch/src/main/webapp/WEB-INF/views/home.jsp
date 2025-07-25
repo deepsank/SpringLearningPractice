@@ -12,7 +12,7 @@
   </head>
   <body>
 
-  <img alt="my image" src="<c:url value="/resources/image/Deepak_photo.jpg"/>">
+  <img alt="my image" style="width: 10%; height: auto;" src="<c:url value="/resources/image/Deepak_photo.jpg" />">
     
 <div class="container">
     <div class="card mx-auto mt-5 bg-primary" style="width: 50%;">
