@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ad648bf-ced3-456d-ada1-4bb8bde499e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/conf/Catalina/localhost/SpringMVCSearch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/conf/Catalina/localhost/SpringMVCSearch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/catalina.2025-07-24.log" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/catalina.2025-07-24.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost.2025-07-24.log" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost.2025-07-24.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost_access_log.2025-07-24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost_access_log.2025-07-24.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/java/com/springMvcSearch/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/java/com/springMvcSearch/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/resources/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/resources/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/home_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/home_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/ComplexFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/ComplexFormController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/SearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/StudentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/StudentEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/fileSuccess_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/fileSuccess_jsp.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,24 +40,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.SpringMVCSearch [compile].executor": "Run",
-    "Maven.SpringMVCSearch [install].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Smart Tomcat.SpringMVC.executor": "Run",
-    "Smart Tomcat.Tomcat: SpringMVCSearch.executor": "Run",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Backend_java/Leaning_Practice/SpringCorePractice/SpringLearningPractice/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/resources/image",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.3295099",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.SpringMVCSearch [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SpringMVCSearch [install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.SpringMVC.executor&quot;: &quot;Run&quot;,
+    &quot;Smart Tomcat.Tomcat: SpringMVCSearch.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Backend_java/Leaning_Practice/SpringCorePractice/SpringLearningPractice/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/resources/image&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3295099&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.springMvcSearch" />
