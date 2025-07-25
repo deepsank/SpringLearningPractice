@@ -19,7 +19,9 @@
 ">
 
     <context:component-scan base-package="com.springMvcSearch"/>
+
     <mvc:annotation-driven/>
+
     <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"    />
 <!--    <tx:annotation-driven />-->
     <bean name="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -28,6 +30,8 @@
 <!--      Eg:- /WEB-INF/views/hello.jsp-->
     </bean>
 
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
 
 
 

@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ad648bf-ced3-456d-ada1-4bb8bde499e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/catalina.2025-07-22.log" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/catalina.2025-07-22.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost.2025-07-22.log" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost.2025-07-22.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/conf/Catalina/localhost/SpringMVCSearch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/conf/Catalina/localhost/SpringMVCSearch.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/catalina.2025-07-24.log" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/catalina.2025-07-24.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost.2025-07-24.log" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost.2025-07-24.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost_access_log.2025-07-24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/logs/localhost_access_log.2025-07-24.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/java/com/springMvcSearch/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/java/com/springMvcSearch/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/resources/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/resources/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/views/complexForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/views/complexForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/home_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/home_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/ComplexFormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/ComplexFormController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/StudentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/StudentEntity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +40,7 @@
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_WARNINGS" value="true" />
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />

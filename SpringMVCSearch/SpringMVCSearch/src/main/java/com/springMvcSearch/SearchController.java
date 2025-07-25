@@ -20,6 +20,7 @@ public class SearchController {
         String url = "https://www.google.com/search?q="+query;
         RedirectView redirectView = new RedirectView();
         redirectView.setUrl(url);
+
         return redirectView;
     }
 }
