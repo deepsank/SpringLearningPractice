@@ -1,8 +1,0 @@
-0:0:0:0:0:0:0:1 - - [25/Jul/2025:12:26:46 +0530] "GET /SpringMVCSearch/user/22 HTTP/1.1" 200 1567
-0:0:0:0:0:0:0:1 - - [25/Jul/2025:12:26:46 +0530] "GET /SpringMVCSearch/resources/js/script.js HTTP/1.1" 200 -
-0:0:0:0:0:0:0:1 - - [25/Jul/2025:12:26:46 +0530] "GET /SpringMVCSearch/resources/image/Deepak_photo.jpg HTTP/1.1" 200 101376
-0:0:0:0:0:0:0:1 - - [25/Jul/2025:12:26:46 +0530] "GET /favicon.ico HTTP/1.1" 404 683
-0:0:0:0:0:0:0:1 - - [25/Jul/2025:12:26:55 +0530] "GET /SpringMVCSearch/user/36 HTTP/1.1" 200 1567
-0:0:0:0:0:0:0:1 - - [25/Jul/2025:12:30:02 +0530] "GET /SpringMVCSearch/user/36/BruceWayne HTTP/1.1" 200 1567
-0:0:0:0:0:0:0:1 - - [25/Jul/2025:12:42:43 +0530] "GET /SpringMVCSearch/user/36/BruceWayne HTTP/1.1" 500 3733
-0:0:0:0:0:0:0:1 - - [25/Jul/2025:12:44:43 +0530] "GET /SpringMVCSearch/user/36/BruceWayne HTTP/1.1" 200 1601

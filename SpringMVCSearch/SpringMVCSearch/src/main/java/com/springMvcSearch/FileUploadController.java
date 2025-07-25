@@ -18,7 +18,8 @@ public class FileUploadController {
 
     @RequestMapping("/fileForm")
     public String showUploadForm(){
-
+//        String str = null;   //For simulating Exception in SpringMVC using @ExceptionHandler
+//        System.out.println(str.length());
         return "fileForm";
     }
 

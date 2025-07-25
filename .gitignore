@@ -1,0 +1,4 @@
+# Ignore all log files in the logs directory
+SpringMVCSearch/SpringMVCSearch/src/temp/
+SpringMVCSearch/SpringMVCSearch/src/conf/
+SpringMVCSearch/SpringMVCSearch/src/logs/
