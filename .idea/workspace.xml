@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ad648bf-ced3-456d-ada1-4bb8bde499e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/java/com/springCrud/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/java/com/springCrud/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/java/com/springCrud/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringAOP/SpringAOP/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringAOP/SpringAOP/src/main/java/com/spring/aop/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringAOP/SpringAOP/src/main/java/com/spring/aop/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringAOP/SpringAOP/src/main/java/com/spring/aop/service/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringAOP/SpringAOP/src/main/resources/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringAOP/SpringAOP/src/test/java/com/spring/aop/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -24,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -48,6 +49,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.SpringMVCSearch [compile].executor": "Run",
     "Maven.SpringMVCSearch [install].executor": "Run",
@@ -68,6 +70,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.spring.aop.service" />
       <recent name="com.springCrud.model" />
       <recent name="com.springMvcSearch" />
     </key>
@@ -81,7 +84,20 @@
       <recent name="E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spring.aop.App" />
+      <module name="SpringAOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringMVC" type="com.poratu.idea.plugins.tomcat">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
@@ -137,9 +153,6 @@
       <option name="catalinaBase" value="" />
       <option name="contextPath" value="/SpringMVC_Product_Example_CRUD" />
       <option name="docBase" value="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -155,12 +168,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.App" />
       <item itemvalue="Smart Tomcat.SpringMVC" />
       <item itemvalue="Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD" />
       <item itemvalue="Smart Tomcat.Tomcat: SpringMVCSearch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD" />
         <item itemvalue="Smart Tomcat.Tomcat: SpringMVCSearch" />
       </list>
