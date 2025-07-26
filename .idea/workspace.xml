@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ad648bf-ced3-456d-ada1-4bb8bde499e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/java/com/springCrud/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/java/com/springCrud/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/java/com/springCrud/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/exceptionPage_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/exceptionPage_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/home_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/src/work/Catalina/localhost/SpringMVCSearch/org/apache/jsp/WEB_002dINF/views/home_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/FileUploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/FileUploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/target/classes/com/springMvcSearch/SearchController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,26 +46,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.SpringMVCSearch [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.SpringMVCSearch [install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Smart Tomcat.SpringMVC.executor&quot;: &quot;Run&quot;,
-    &quot;Smart Tomcat.Tomcat: SpringMVCSearch.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Backend_java/Leaning_Practice/SpringCorePractice/SpringLearningPractice/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/resources/image&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3295099&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.SpringMVCSearch [compile].executor": "Run",
+    "Maven.SpringMVCSearch [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Smart Tomcat.SpringMVC.executor": "Run",
+    "Smart Tomcat.Tomcat: SpringMVCSearch.executor": "Run",
+    "Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD.executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Backend_java/Leaning_Practice/SpringCorePractice/SpringLearningPractice/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/resources/image",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3295099",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.springCrud.model" />
       <recent name="com.springMvcSearch" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -71,11 +76,12 @@
       <recent name="E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVC\src\main\webapp\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVC_Product_Example_CRUD\SpringMVC_Product_Example_CRUD\src\main\webapp\WEB-INF\views" />
       <recent name="E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\main\webapp\WEB-INF" />
       <recent name="E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Smart Tomcat.Tomcat: SpringMVCSearch">
+  <component name="RunManager" selected="Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD">
     <configuration name="SpringMVC" type="com.poratu.idea.plugins.tomcat">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
@@ -122,12 +128,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat: SpringMVC_Product_Example_CRUD" type="com.poratu.idea.plugins.tomcat" temporary="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="" />
+      <option name="contextPath" value="/SpringMVC_Product_Example_CRUD" />
+      <option name="docBase" value="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/10.1.43" />
+          <option name="path" value="D:/Program Files/apache_tomcat/apache-tomcat-10.1.43" />
+          <option name="version" value="10.1.43.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="SpringMVC_Product_Example_CRUD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Smart Tomcat.SpringMVC" />
+      <item itemvalue="Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD" />
       <item itemvalue="Smart Tomcat.Tomcat: SpringMVCSearch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD" />
         <item itemvalue="Smart Tomcat.Tomcat: SpringMVCSearch" />
       </list>
     </recent_temporary>

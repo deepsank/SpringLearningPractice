@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/SpringMVC/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVCSearch/SpringMVCSearch/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC_Product_Example_CRUD/SpringMVC_Product_Example_CRUD/pom.xml" />
       </list>
     </option>
   </component>

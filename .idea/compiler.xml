@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringMVCSearch" />
         <module name="SpringMVC" />
+        <module name="SpringMVC_Product_Example_CRUD" />
       </profile>
     </annotationProcessing>
   </component>
