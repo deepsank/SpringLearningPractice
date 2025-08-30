@@ -1,15 +1,21 @@
 package com.dkupadhy.hospitalManagement.service;
 
-
+import com.dkupadhy.hospitalManagement.dto.AppointmentResponseDto;
+import com.dkupadhy.hospitalManagement.dto.CreateAppointmentRequestDto;
 import com.dkupadhy.hospitalManagement.entity.Appointment;
 import com.dkupadhy.hospitalManagement.entity.Doctor;
 import com.dkupadhy.hospitalManagement.entity.Patient;
 import com.dkupadhy.hospitalManagement.repository.AppointmentRepository;
 import com.dkupadhy.hospitalManagement.repository.DoctorRepository;
 import com.dkupadhy.hospitalManagement.repository.PatientRepository;
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -18,32 +24,48 @@ public class AppointmentService {
     private final AppointmentRepository appointmentRepository;
     private final DoctorRepository doctorRepository;
     private final PatientRepository patientRepository;
+    private final ModelMapper modelMapper;
 
     @Transactional
-    public Appointment createAppointment(Appointment appointment, Long doctorId, Long patientId){
-        Doctor doctor = doctorRepository.findById(doctorId).orElseThrow();
-        Patient patient = patientRepository.findById(patientId).orElseThrow();
+    public AppointmentResponseDto createNewAppointment(CreateAppointmentRequestDto createAppointmentRequestDto) {
+        Long doctorId = createAppointmentRequestDto.getDoctorId();
+        Long patientId = createAppointmentRequestDto.getPatientId();
 
-        if(appointment.getId() != null) throw new IllegalArgumentException("Appointment should not have been there already");
+        Patient patient = patientRepository.findById(patientId)
+                .orElseThrow(() -> new EntityNotFoundException("Patient not found with ID: " + patientId));
+        Doctor doctor = doctorRepository.findById(doctorId)
+                .orElseThrow(() -> new EntityNotFoundException("Doctor not found with ID: " + doctorId));
+        Appointment appointment = Appointment.builder()
+                .reason(createAppointmentRequestDto.getReason())
+                .appointmentTime(createAppointmentRequestDto.getAppointmentTime())
+                .build();
 
         appointment.setPatient(patient);
         appointment.setDoctor(doctor);
+        patient.getAppointments().add(appointment); // to maintain consistency
 
-        patient.getAppointments().add(appointment); // Just to maintain bi-directional consistency
-
-        appointmentRepository.save(appointment);
-        return appointment;
+        appointment = appointmentRepository.save(appointment);
+        return modelMapper.map(appointment, AppointmentResponseDto.class);
     }
 
     @Transactional
-    public Appointment reAssignAppointmentToAnotherDoctor(Long appointmentId, Long doctorId){
+    public Appointment reAssignAppointmentToAnotherDoctor(Long appointmentId, Long doctorId) {
         Appointment appointment = appointmentRepository.findById(appointmentId).orElseThrow();
         Doctor doctor = doctorRepository.findById(doctorId).orElseThrow();
 
-        appointment.setDoctor(doctor);   //Appointment made DIRTY (dirty state) --- this will auto,automatically call the update
+        appointment.setDoctor(doctor); // this will automatically call the update, because it is dirty
 
-        doctor.getAppointments().add(appointment);  //Just for maintaining bi-directional consistency
+        doctor.getAppointments().add(appointment); // just for bidirectional consistency
 
         return appointment;
+    }
+
+    public List<AppointmentResponseDto> getAllAppointmentsOfDoctor(Long doctorId) {
+        Doctor doctor = doctorRepository.findById(doctorId).orElseThrow();
+
+        return doctor.getAppointments()
+                .stream()
+                .map(appointment -> modelMapper.map(appointment, AppointmentResponseDto.class))
+                .collect(Collectors.toList());
     }
 }

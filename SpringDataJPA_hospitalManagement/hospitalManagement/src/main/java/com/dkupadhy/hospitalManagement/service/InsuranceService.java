@@ -1,6 +1,5 @@
 package com.dkupadhy.hospitalManagement.service;
 
-
 import com.dkupadhy.hospitalManagement.entity.Insurance;
 import com.dkupadhy.hospitalManagement.entity.Patient;
 import com.dkupadhy.hospitalManagement.repository.InsuranceRepository;
@@ -18,27 +17,27 @@ public class InsuranceService {
     private final PatientRepository patientRepository;
 
     @Transactional
-    public Patient assignInsuranceToPatient(Insurance insurance, Long patientId){
+    public Patient assignInsuranceToPatient(Insurance insurance, Long patientId) {
         Patient patient = patientRepository.findById(patientId)
-                .orElseThrow(()-> new EntityNotFoundException("Patient not found with id:- "+patientId));
+                .orElseThrow(() -> new EntityNotFoundException("Patient not found with id: " + patientId));
 
         patient.setInsurance(insurance);
-        insurance.setPatient(patient); // bi-directional consistency maintainence
+        insurance.setPatient(patient); // bidirectional consistency maintainence
 
         return patient;
-
     }
 
-
     @Transactional
-    public Patient disAssociateInsuranceFromPatient(Long patientId) {
+    public Patient disaccociateInsuranceFromPatient(Long patientId) {
         Patient patient = patientRepository.findById(patientId)
-                .orElseThrow(() -> new EntityNotFoundException("Patient not found with id:- " + patientId));
+                .orElseThrow(() -> new EntityNotFoundException("Patient not found with id: " + patientId));
 
         patient.setInsurance(null);
         return patient;
     }
 
-    //HW
-    //Create 3 appointment for a patient and then delete Patient
+    // HW
+    //Create three appointment for a patient and then delete Patient
+
+
 }
