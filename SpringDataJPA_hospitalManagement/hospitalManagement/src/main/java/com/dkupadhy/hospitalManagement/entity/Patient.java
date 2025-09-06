@@ -2,9 +2,7 @@ package com.dkupadhy.hospitalManagement.entity;
 
 import com.dkupadhy.hospitalManagement.entity.type.BloodGroupType;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
@@ -15,6 +13,9 @@ import java.util.List;
 @ToString
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Table(
         name = "patient",
         uniqueConstraints = {
@@ -36,6 +37,10 @@ public class Patient { // Patient_Table ----> patient_table
     private LocalDate birthDate;
 
     private String gender;
+
+    @OneToOne
+    @MapsId
+    private User user;
 
     @Column(unique = true, nullable = false)
     private String email;
