@@ -13,5 +13,17 @@
     <url-pattern>/web</url-pattern>
   </servlet-mapping>
 
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>servletUsingGenericServlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.UsingGenericServlet</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>servletUsingGenericServlet</servlet-name>
+    <url-pattern>/genericServlet</url-pattern>
+  </servlet-mapping>
+
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
