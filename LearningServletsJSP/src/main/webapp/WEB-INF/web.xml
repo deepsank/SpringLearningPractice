@@ -25,5 +25,17 @@
     <url-pattern>/genericServlet</url-pattern>
   </servlet-mapping>
 
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>servletUsingHttpServlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.UsingHTTPServlet</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>servletUsingHttpServlet</servlet-name>
+    <url-pattern>/httpServlet</url-pattern>
+  </servlet-mapping>
+
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
