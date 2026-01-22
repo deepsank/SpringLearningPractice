@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <web-app >
+
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
 <!--  Servlet Declaration-->
   <servlet>
     <servlet-name>first</servlet-name>
@@ -35,6 +39,30 @@
   <servlet-mapping>
     <servlet-name>servletUsingHttpServlet</servlet-name>
     <url-pattern>/httpServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.RegisterServlet</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>successServlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.SuccessServlet</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>successServlet</servlet-name>
+    <url-pattern>/success</url-pattern>
   </servlet-mapping>
 
   <display-name>Archetype Created Web Application</display-name>
