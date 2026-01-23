@@ -65,5 +65,52 @@
     <url-pattern>/success</url-pattern>
   </servlet-mapping>
 
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>s1Servlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.S1</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>s1Servlet</servlet-name>
+    <url-pattern>/s1</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>s2Servlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.S2</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>s2Servlet</servlet-name>
+    <url-pattern>/s2</url-pattern>
+  </servlet-mapping>
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>servlet1Servlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.Servlet1</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>servlet1Servlet</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>servlet2Servlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.Servlet2</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>servlet2Servlet</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
