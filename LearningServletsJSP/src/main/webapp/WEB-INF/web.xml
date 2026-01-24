@@ -112,5 +112,17 @@
     <url-pattern>/servlet2</url-pattern>
   </servlet-mapping>
 
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>signUpServlet</servlet-name>
+    <servlet-class>com.deepsank.SignUp.Register</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>signUpServlet</servlet-name>
+    <url-pattern>/registerUser</url-pattern>
+  </servlet-mapping>
+
   <display-name>Archetype Created Web Application</display-name>
 </web-app>

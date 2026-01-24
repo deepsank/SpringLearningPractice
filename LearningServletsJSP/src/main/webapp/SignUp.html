@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body style="background: url(images/anime-character-traveling.jpg);background-size: cover;background-attachment: fixed;">
+<div class="container" >
+    <!-- Page Content goes here -->
+    <div class="row">
+        <div class="col s12 m6 offset-m6">
+            <div class="card" style="background-color: rgba(255, 255, 255, 0.5); padding: 20px;">
+                <div class="card-content">
+                    <h3 class="center-align">Register Here!!!</h3>
+                    <h5 id="msg" class="center-align"></h5>
+                    <div class="form center-align" >
+                        <form id="SignUpForm" action="registerUser" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="name" type="text" class="validate" name="name" placeholder="Enter your name">
+                                    <label for="name">Name</label>
+                                 </div>
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate" name="password" placeholder="Enter your password">
+                                    <label for="password">Password</label>
+                                 </div>
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate" name="email" placeholder="Enter your email">
+                                    <label for="email">Email</label>
+                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="file-field input-field col s12">
+                                    <div class="btn blue">
+                                        <span>File</span>
+                                        <input name="image" type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input name="filePath" class="file-path validate" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-light blue" type="submit" name="action">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="loader center-align " style="margin-top:10px;display:none;">
+                        <div class="preloader-wrapper big active">
+                            <div class="spinner-layer spinner-blue">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div><div class="gap-patch">
+                                <div class="circle"></div>
+                            </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                            </div>
+
+                            <div class="spinner-layer spinner-red">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div><div class="gap-patch">
+                                <div class="circle"></div>
+                            </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                            </div>
+
+                            <div class="spinner-layer spinner-yellow">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div><div class="gap-patch">
+                                <div class="circle"></div>
+                            </div><div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                            </div>
+
+                            <div class="spinner-layer spinner-green">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div><div class="gap-patch">
+                                <div class="circle"></div>
+                                </div><div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h5>Please wait...</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script
+        src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+        crossorigin="anonymous">
+</script>
+
+<script>
+    $(document).ready(function(){
+        console.log("Page is ready...");
+        $("#SignUpForm").on('submit',function(event){
+            event.preventDefault();
+//          var f = $(this).serialize();   // Valid for text data only
+            let f = new FormData(this);    // Valid for data other than text also like image type
+            console.log(f);
+            $(".loader").show();
+            $(".form").hide();
+            $.ajax({
+                url:'registerUser',
+                data: f,
+                type: 'POST',
+                success: function(data, textStatus, jqXHR){
+                    console.log(data);
+                    console.log("success..........");
+                    $(".loader").hide();
+                    $(".form").show();
+                    if(data.trim()==="Done"){
+                        $("#msg").html("Successfully registered !!!");
+                        $("#msg").removeClass('red-text');
+                        $("#msg").addClass('green-text');
+                    }
+                    else{
+                        $("#msg").html("Something went wrong !!!");
+                        $("#msg").removeClass('green-text');
+                        $("#msg").addClass('red-text');
+                    }
+
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    console.log(data);
+                    console.log("error..........");
+                    $(".loader").hide();
+                    $(".form").show();
+                    $("#msg").html("Something went wrong !!!");
+                    $("#msg").removeClass('green-text');
+                    $("#msg").addClass('red-text');
+                },
+                processData: false,
+                contentType: false
+            });
+        })
+    })
+</script>
+</body>
+</html>
