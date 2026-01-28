@@ -148,5 +148,30 @@
     <url-pattern>/urlrwservlet2</url-pattern>
   </servlet-mapping>
 
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>hiddedfieldServlet1</servlet-name>
+    <servlet-class>com.deepsank.servlets.HiddenFieldS1</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>hiddedfieldServlet1</servlet-name>
+    <url-pattern>/hiddedfieldS1</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>hiddedfieldServlet2</servlet-name>
+    <servlet-class>com.deepsank.servlets.HiddenFieldS2</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>hiddedfieldServlet2</servlet-name>
+    <url-pattern>/hiddedfieldS2</url-pattern>
+  </servlet-mapping>
+
+
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
