@@ -26,7 +26,7 @@ public class HiddenFieldS1 extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet S1</title>");
+            out.println("<title>HiddenServlet S1</title>");
             out.println("</head>");
             out.println("<body>");
 //            out.println("<h1>Servlet S1 at "+req.getContextPath()+"</h1>");
