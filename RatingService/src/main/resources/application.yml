@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:sqlite:D:\LearningProjects\SQLLite\Micro_RatingService_Learning.db
+#    username: root
+#    password: root
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
