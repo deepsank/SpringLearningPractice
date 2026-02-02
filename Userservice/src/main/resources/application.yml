@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: UserService
   datasource:
     url: jdbc:sqlite:D:\LearningProjects\SQLLite\Micro_UserService_Learning.db
 #    username: root
@@ -15,4 +17,12 @@ spring:
       hibernate:
         dialect: org.hibernate.community.dialect.SQLiteDialect
 
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8671/eureka
 

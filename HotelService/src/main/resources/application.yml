@@ -2,6 +2,8 @@ server:
   port: 8082
 
 spring:
+  application:
+    name: HotelService
   datasource:
     url: jdbc:sqlite:D:\LearningProjects\SQLLite\Micro_HotelService_Learning.db
 #    username: root
@@ -14,3 +16,12 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.community.dialect.SQLiteDialect
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8671/eureka
