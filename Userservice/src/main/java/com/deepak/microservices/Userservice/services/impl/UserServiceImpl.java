@@ -4,6 +4,7 @@ import com.deepak.microservices.Userservice.entities.Hotel;
 import com.deepak.microservices.Userservice.entities.Rating;
 import com.deepak.microservices.Userservice.entities.User;
 import com.deepak.microservices.Userservice.exceptions.ResourceNotFoundException;
+import com.deepak.microservices.Userservice.external.services.HotelService;
 import com.deepak.microservices.Userservice.repositories.UserRepository;
 import com.deepak.microservices.Userservice.services.UserService;
 import org.jspecify.annotations.Nullable;
@@ -29,6 +30,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    private HotelService hotelService;
+
     private Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
     @Override
     public User saveUser(User user) {
@@ -53,9 +57,10 @@ public class UserServiceImpl implements UserService {
         listOfRatings.stream().map(rating->{
             //api call to get hotel from hotel service
             //http://localhost:8082/hotels/19d99f95-f000-446d-8334-8566a0782019
-            ResponseEntity<Hotel> forEntity = restTemplate.getForEntity("http://HotelService/hotels/"+rating.getHotelId(), Hotel.class);
-            Hotel hotel = forEntity.getBody();
-            logger.info("Resp status code: {}",forEntity.getStatusCode());
+//            ResponseEntity<Hotel> forEntity = restTemplate.getForEntity("http://HotelService/hotels/"+rating.getHotelId(), Hotel.class);
+//            Hotel hotel = forEntity.getBody();
+//            logger.info("Resp status code: {}",forEntity.getStatusCode());
+            Hotel hotel = hotelService.getHotel(rating.getHotelId());
             rating.setHotel(hotel);
             return rating;
 
