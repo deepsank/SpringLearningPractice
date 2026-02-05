@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: CONFIG-SERVER
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/deepsank/MicroservicesLearning_ConfigFiles
+          clone-on-start: true
+
+
+server:
+  port: 8085
