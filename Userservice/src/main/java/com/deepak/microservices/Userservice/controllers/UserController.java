@@ -4,6 +4,8 @@ import com.deepak.microservices.Userservice.entities.User;
 import com.deepak.microservices.Userservice.services.UserService;
 import com.deepak.microservices.Userservice.services.impl.UserServiceImpl;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,14 +31,35 @@ public class UserController {
     }
 
     //Fetch particular user
+    int retryCount = 1;
     @GetMapping("/{userId}")
-    @CircuitBreaker(name = "ratingHotelBreaker", fallbackMethod = "ratingHotelBreakerFallback")
+//    @CircuitBreaker(name = "ratingHotelBreaker", fallbackMethod = "ratingHotelBreakerFallback")
+//    @Retry(name = "ratingHotelService", fallbackMethod = "ratingHotelBreakerFallback")
+    @RateLimiter(name = "userRateLimiter", fallbackMethod = "ratingHotelRateLimiterFallback")
     public ResponseEntity<User> fetchUser(@PathVariable String userId){
+        logger.info("Get Single User Handler: UserController");
+//        logger.info("Retry count : {}", retryCount);
+        retryCount++;
         User user = userService.getUser(userId);
         return ResponseEntity.ok(user);
     }
 
+    // Creating fallback method for Rate Limiter
+
+    public ResponseEntity<User> ratingHotelRateLimiterFallback(String userId, Exception ex){
+        logger.info("Fallback is executed as userRateLimiter limit reached : {}",ex.getMessage());
+        User user = User.builder()
+                .email("dummy@gmail.com")
+                .userId(userId)
+                .name("dummy")
+                .info("This is dummy response aas userRateLimiter limit reached.")
+                .build();
+
+        return new ResponseEntity<>(user,HttpStatus.BAD_REQUEST);
+    }
+
     // Creating fallback method for Cicuit breaker
+
     public ResponseEntity<User> ratingHotelBreakerFallback(String userId, Exception ex){
         logger.info("Fallback is executed as hotel or rating service is down : {}",ex.getMessage());
          User user = User.builder()

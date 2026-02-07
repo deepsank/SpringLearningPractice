@@ -28,16 +28,33 @@ management:
   endpoints:
     web:
       exposure:
-        include: health
+        include: health, circuitbreakers, info, metrics
   endpoint:
+    circuitbreakers:
+      enabled: true
     health:
       show-details: ALWAYS
+      show-components: ALWAYS
 
 resilience4j:
+  retry:
+    instances:
+      ratingHotelService:
+        max-attempts: 3
+        wait-duration: 5s
+  ratelimiter:
+    instances:
+      userRateLimiter:
+        limit-refresh-period: 4s
+        limit-for-period: 2
+        timeout-duration: 4s
   circuitbreaker:
+    configs:
+      default:
+        register-health-indicator: true
     instances:
       ratingHotelBreaker:
-        registerHealthIndicator: true
+        register-health-indicator: true
         event-consumer-buffer-size: 10
         failure-rate-threshold: 50
         minimum-number-of-calls: 5
