@@ -47,7 +47,7 @@ resilience4j:
       userRateLimiter:
         limit-refresh-period: 4s
         limit-for-period: 2
-        timeout-duration: 4s
+        timeout-duration: 5s
   circuitbreaker:
     configs:
       default:
