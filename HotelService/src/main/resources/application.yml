@@ -19,6 +19,12 @@ spring:
   config:
     import: optional:configserver:http://localhost:8085
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          audiences: api://default
+          issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/
 #No need of below configurations as they are now fetched from GitHub using ConfigServer
 
 #eureka:
