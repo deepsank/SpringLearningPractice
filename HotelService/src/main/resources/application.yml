@@ -23,7 +23,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          audiences: api://default
+#          audiences: api://default
+#          audiences: https://microservices-api
           issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/
 #No need of below configurations as they are now fetched from GitHub using ConfigServer
 
@@ -35,3 +36,10 @@ spring:
 #    register-with-eureka: true
 #    service-url:
 #      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    org.springframework.security: TRACE
+    org.springframework.security.web.server: TRACE
+    org.springframework.security.oauth2: TRACE
+    org.springframework.cloud.gateway: DEBUG

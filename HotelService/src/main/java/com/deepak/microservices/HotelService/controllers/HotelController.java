@@ -18,19 +18,19 @@ public class HotelController {
     @Autowired
     private HotelService hotelService;
 
-    @PreAuthorize("hasAuthority('Admin')")
+//    @PreAuthorize("hasAuthority('Admin')")
     @PostMapping
     public ResponseEntity<Hotel> createHotel(@RequestBody Hotel hotel){
         return ResponseEntity.status(HttpStatus.CREATED).body(hotelService.create(hotel));
     }
 
-    @PreAuthorize("hasAuthority('SCOPE_internal')")
+//    @PreAuthorize("hasAuthority('SCOPE_internal')")
     @GetMapping("/{hotelId}")
     public ResponseEntity<Hotel> getHotel(@PathVariable String hotelId){
         return ResponseEntity.status(HttpStatus.OK).body(hotelService.get(hotelId));
     }
 
-    @PreAuthorize("hasAuthority('SCOPE_internal') || hasAuthority('Admin')")
+//    @PreAuthorize("hasAuthority('SCOPE_internal') || hasAuthority('Admin')")
     @GetMapping
     public ResponseEntity<List<Hotel>> getAllHotel(){
         return ResponseEntity.ok(hotelService.getAll());

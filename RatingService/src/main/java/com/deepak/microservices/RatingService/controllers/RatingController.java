@@ -30,7 +30,7 @@ public class RatingController {
         return ResponseEntity.ok(ratingService.getRatings());
     }
 
-    @PreAuthorize("hasAuthority('SCOPE_internal') || hasAuthority('Admin')")
+//    @PreAuthorize("hasAuthority('SCOPE_internal') || hasAuthority('Admin')")
     @GetMapping("users/{userId}")
     public ResponseEntity<List<Rating>> getRatingsByUserId(@PathVariable String userId){
         return ResponseEntity.ok(ratingService.getRatingByUserId(userId));

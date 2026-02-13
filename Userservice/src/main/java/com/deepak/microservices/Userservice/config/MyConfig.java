@@ -20,30 +20,32 @@ import java.util.List;
 @Configuration
 public class MyConfig {
 
-    @Autowired
-    private ClientRegistrationRepository clientRegistrationRepository;
-    @Autowired
-    private OAuth2AuthorizedClientRepository authorizedClientRepository;
+//    @Autowired
+//    private ClientRegistrationRepository clientRegistrationRepository;
+//    @Autowired
+//    private OAuth2AuthorizedClientRepository authorizedClientRepository;
     @Bean
     @LoadBalanced
-    public RestTemplate restTemplate(){
+    public RestTemplate restTemplate(RestTemplateInterceptor interceptor){
         RestTemplate restTemplate = new RestTemplate();
-        List<ClientHttpRequestInterceptor> interceptors = new ArrayList<>();
-        interceptors.add(new RestTemplateInterceptor(oAuth2AuthorizedClientManager(
-                clientRegistrationRepository, authorizedClientRepository
-        )));
-        restTemplate.setInterceptors(interceptors);
+//        List<ClientHttpRequestInterceptor> interceptors = new ArrayList<>();
+//        interceptors.add(new RestTemplateInterceptor(oAuth2AuthorizedClientManager(
+//                clientRegistrationRepository, authorizedClientRepository
+//        )));
+//        restTemplate.setInterceptors(interceptors);
+        restTemplate.getInterceptors().add(interceptor);
+
         return restTemplate;
     }
 
-    @Bean
-    public OAuth2AuthorizedClientManager oAuth2AuthorizedClientManager(
-            ClientRegistrationRepository clientRegistrationRepository,
-            OAuth2AuthorizedClientRepository oAuth2AuthorizedClientRepository
-    ){
-        OAuth2AuthorizedClientProvider oauth2AuthorizedClientProvider = OAuth2AuthorizedClientProviderBuilder.builder().authorizationCode().build();
-        DefaultOAuth2AuthorizedClientManager defaultOAuth2AuthorizedClientManager = new DefaultOAuth2AuthorizedClientManager(clientRegistrationRepository, oAuth2AuthorizedClientRepository);
-        defaultOAuth2AuthorizedClientManager.setAuthorizedClientProvider(oauth2AuthorizedClientProvider);
-        return defaultOAuth2AuthorizedClientManager;
-    }
+//    @Bean
+//    public OAuth2AuthorizedClientManager oAuth2AuthorizedClientManager(
+//            ClientRegistrationRepository clientRegistrationRepository,
+//            OAuth2AuthorizedClientRepository oAuth2AuthorizedClientRepository
+//    ){
+//        OAuth2AuthorizedClientProvider oauth2AuthorizedClientProvider = OAuth2AuthorizedClientProviderBuilder.builder().authorizationCode().build();
+//        DefaultOAuth2AuthorizedClientManager defaultOAuth2AuthorizedClientManager = new DefaultOAuth2AuthorizedClientManager(clientRegistrationRepository, oAuth2AuthorizedClientRepository);
+//        defaultOAuth2AuthorizedClientManager.setAuthorizedClientProvider(oauth2AuthorizedClientProvider);
+//        return defaultOAuth2AuthorizedClientManager;
+//    }
 }

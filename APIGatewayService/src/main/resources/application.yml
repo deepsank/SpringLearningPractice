@@ -4,22 +4,28 @@ spring:
   cloud:
     gateway:
       server:
-        webmvc:
+        webflux:
           routes:
             - id: USER-SERVICE
               uri: lb://UserService
               predicates:
                 - Path=/users/**
-
+              filters:
+                - TokenRelay=
+            # This passes the token to the microservice
             - id: HOTEL-SERVICE
               uri: lb://HotelService
               predicates:
                 - Path=/hotels/**,/staffs/**
+              filters:
+                - TokenRelay= # This passes the token to the microservice
 
             - id: RATING-SERVICE
               uri: lb://RatingService
               predicates:
                 - Path=/ratings/**
+              filters:
+                - TokenRelay= # This passes the token to the microservice
 
   config:
     import: optional:configserver:http://localhost:8085
@@ -33,9 +39,12 @@ spring:
             scope: openid, profile, email
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/okta"
+
         provider:
           auth0:
             issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/
+
+
 
 #        registration:
 #          okta:
@@ -44,12 +53,23 @@ spring:
 #            scope: openid,profile,email
       resourceserver:
         jwt:
-          issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/oauth2/default
-
+          issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/
+#          jwk-set-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/.well-known/jwks.json
+          audiences: https://microservices-api
 
 server:
   port: 8084
+# Auth0 Configuration
+auth0:
+  domain: dev-xmv044k57mtbkxo1.us.auth0.com
+  audience: https://microservices-api
 
+logging:
+  level:
+    org.springframework.security: TRACE
+    org.springframework.security.web.server: TRACE
+    org.springframework.security.oauth2: TRACE
+    org.springframework.cloud.gateway: DEBUG
 
 # OAUTH0(okta) configs for API Gateway
 #okta:

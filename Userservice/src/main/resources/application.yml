@@ -41,7 +41,8 @@ spring:
       #            scope: openid,profile,email
       resourceserver:
         jwt:
-          issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/oauth2/default
+
+          issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/
 
 
 management:
@@ -100,5 +101,10 @@ resilience4j:
 #    service-url:
 #      defaultZone: http://localhost:8761/eureka
 
-
+logging:
+  level:
+    org.springframework.security: TRACE
+    org.springframework.security.web.server: TRACE
+    org.springframework.security.oauth2: TRACE
+    org.springframework.cloud.gateway: DEBUG
 

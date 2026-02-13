@@ -38,6 +38,7 @@ public class UserController {
     @RateLimiter(name = "userRateLimiter", fallbackMethod = "ratingHotelRateLimiterFallback")
     public ResponseEntity<User> fetchUser(@PathVariable String userId){
         logger.info("Get Single User Handler: UserController");
+
 //        logger.info("Retry count : {}", retryCount);
         retryCount++;
         User user = userService.getUser(userId);
@@ -73,7 +74,7 @@ public class UserController {
     }
 
     //Fetch all users
-    @GetMapping
+    @GetMapping("/")
     public ResponseEntity<List<User>> fetchAllUsers(){
          List<User> allUsers = userService.fetchAllUser();
          return ResponseEntity.ok(allUsers);
