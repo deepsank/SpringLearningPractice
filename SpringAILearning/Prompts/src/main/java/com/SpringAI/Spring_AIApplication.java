@@ -1,13 +1,13 @@
-package com.SpringAI.Prompts;
+package com.SpringAI;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PromptsApplication {
+public class Spring_AIApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PromptsApplication.class, args);
+		SpringApplication.run(Spring_AIApplication.class, args);
 	}
 
 }

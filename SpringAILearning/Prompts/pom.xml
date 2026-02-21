@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.SpringAI</groupId>
-	<artifactId>Prompts</artifactId>
+	<artifactId>Spring_AI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Prompts</name>
-	<description>Prompts project for Spring Boot</description>
+	<name>Spring_AI</name>
+	<description>Spring AI project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
