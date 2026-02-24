@@ -22,21 +22,15 @@ public class OlympicsController {
     public OlympicsController(ChatClient chatClient) {
         this.chatClient = chatClient;
     }
-//    Resource olympicSportsResource = new ClassPathResource("/prompts/olympic-sports.st");
-        @Value("classpath:/prompts/olympic-sports.st")
-        private Resource olympicSportsResource;
-//    Resource docsToStuffResource = new ClassPathResource("/docs/olympic-sports.txt");
-        @Value("classpath:/docs/olympic-sports.txt")
-        private Resource docsToStuffResource;
-
+    Resource olympicSportsResource = new ClassPathResource("/prompts/olympic-sports.st");
+//        @Value("classpath:/prompts/olympic-sports.st")
+//        private Resource olympicSportsResource;
+    Resource docsToStuffResource = new ClassPathResource("/docs/olympic-sports.txt");
     @GetMapping("/2028")
     public String fetch2028OlympicSport(
             @RequestParam(value = "message", defaultValue = "What sports are being included in the 2028 summer olympics?") String message,
             @RequestParam(value = "stuffit", defaultValue = "false") boolean stuffit
-    ){
-        System.out.println("olympicSportsResource:--  "+olympicSportsResource);
-        System.out.println("docsToStuffResource:--  "+docsToStuffResource);
-        PromptTemplate promptTemplate = new PromptTemplate(olympicSportsResource);
+    ){  PromptTemplate promptTemplate = new PromptTemplate(olympicSportsResource);
         Map<String,Object> map = new HashMap<>();
         map.put("question",message);
         if(stuffit){
@@ -45,7 +39,6 @@ public class OlympicsController {
         else {
             map.put("context","");
         }
-        System.out.println(map.toString());
         Prompt prompt = promptTemplate.create(map);
         return chatClient.prompt(prompt)
 //                .user(message)
