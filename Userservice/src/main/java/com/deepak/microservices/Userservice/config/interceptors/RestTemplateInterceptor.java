@@ -1,0 +1,55 @@
+package com.deepak.microservices.Userservice.config.interceptors;
+
+import org.springframework.http.HttpRequest;
+import org.springframework.http.client.ClientHttpRequestExecution;
+import org.springframework.http.client.ClientHttpResponse;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.oauth2.client.OAuth2AuthorizeRequest;
+import org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager;
+import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
+import org.springframework.stereotype.Component;
+
+import java.io.IOException;
+
+@Component
+public class   RestTemplateInterceptor implements org.springframework.http.client.ClientHttpRequestInterceptor {
+
+//    private OAuth2AuthorizedClientManager oAuth2AuthorizedClientManager;
+//
+//    public RestTemplateInterceptor(OAuth2AuthorizedClientManager oAuth2AuthorizedClientManager) {
+//        this.oAuth2AuthorizedClientManager = oAuth2AuthorizedClientManager;
+//    }
+//
+//    @Override
+//    public ClientHttpResponse intercept(HttpRequest request, byte[] body, ClientHttpRequestExecution execution) throws IOException {
+//        String token = oAuth2AuthorizedClientManager.authorize(OAuth2AuthorizeRequest.withClientRegistrationId("auth0")
+//                .principal("internal")
+//                .build()).getAccessToken().getTokenValue();
+//        request.getHeaders().add("Authorization", "Bearer "+ token);
+//
+//        return execution.execute(request, body);
+//    }
+
+
+    @Override
+    public ClientHttpResponse intercept(HttpRequest request,
+                                        byte[] body,
+                                        ClientHttpRequestExecution execution)
+            throws IOException {
+
+        Authentication authentication =
+                SecurityContextHolder.getContext().getAuthentication();
+
+
+        if (authentication instanceof JwtAuthenticationToken jwtAuth) {
+
+            String token = jwtAuth.getToken().getTokenValue();
+
+
+            request.getHeaders().add("Authorization", "Bearer " + token);
+        }
+
+        return execution.execute(request, body);
+    }
+}

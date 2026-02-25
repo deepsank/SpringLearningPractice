@@ -1,0 +1,110 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: UserService
+  datasource:
+    url: jdbc:sqlite:D:\LearningProjects\SQLLite\Micro_UserService_Learning.db
+#    username: root
+#    password: root
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
+
+  config:
+    import: optional:configserver:http://localhost:8085
+
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: ${OKTA_CLIENT_ID}
+            client-secret: ${OKTA_CLIENT_SECRET}
+            scope: internal
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/okta"
+        provider:
+          auth0:
+            issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/
+
+      #        registration:
+      #          okta:
+      #            client-id: ${OKTA_CLIENT_ID}
+      #            client-secret: ${OKTA_CLIENT_SECRET}
+      #            scope: openid,profile,email
+      resourceserver:
+        jwt:
+
+          issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/
+
+
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health, circuitbreakers, info, metrics
+  endpoint:
+    circuitbreakers:
+      enabled: true
+    health:
+      show-details: ALWAYS
+      show-components: ALWAYS
+
+resilience4j:
+  retry:
+    instances:
+      ratingHotelService:
+        max-attempts: 3
+        wait-duration: 5s
+  ratelimiter:
+    instances:
+      userRateLimiter:
+        limit-refresh-period: 4s
+        limit-for-period: 2
+        timeout-duration: 5s
+  circuitbreaker:
+    configs:
+      default:
+        register-health-indicator: true
+    instances:
+      ratingHotelBreaker:
+        register-health-indicator: true
+        event-consumer-buffer-size: 10
+        failure-rate-threshold: 50
+        minimum-number-of-calls: 5
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state: 6s
+        permitted-number-of-calls-in-half-open-state: 3
+        sliding-window-size: 10
+        sliding-window-type: COUNT_BASED
+#  profiles:
+#    active: prod
+
+#No need of below configurations as they are now fetched from GitHub using ConfigServer
+
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    org.springframework.security: TRACE
+    org.springframework.security.web.server: TRACE
+    org.springframework.security.oauth2: TRACE
+    org.springframework.cloud.gateway: DEBUG
+

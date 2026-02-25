@@ -5,6 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ad648bf-ced3-456d-ada1-4bb8bde499e6" name="Changes" comment="">
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/LearningServletsJSP/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearningServletsJSP/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearningServletsJSP/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearningServletsJSP/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearningServletsJSP/.oca/custom_code_review_guidelines.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearningServletsJSP/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearningServletsJSP/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearningServletsJSP/src/main/webapp/index.jsp" afterDir="false" />
+>>>>>>> 7a7453f538ab65dea0f4041d218d3447f0ccb2fe
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +63,10 @@
     &quot;Smart Tomcat.Tomcat: SpringMVCSearch.executor&quot;: &quot;Run&quot;,
     &quot;Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+<<<<<<< HEAD
+=======
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+>>>>>>> 7a7453f538ab65dea0f4041d218d3447f0ccb2fe
     &quot;last_opened_file_path&quot;: &quot;E:/Backend_java/Leaning_Practice/SpringCorePractice/SpringLearningPractice/SpringMVCSearch/SpringMVCSearch/src/main/webapp/WEB-INF/resources/image&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -74,6 +89,24 @@
       <recent name="E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\main\webapp\WEB-INF" />
       <recent name="E:\Backend_java\Leaning_Practice\SpringCorePractice\SpringLearningPractice\SpringMVCSearch\SpringMVCSearch\src\main\webapp" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+    <option name="hiddenConfigurations">
+      <map>
+        <entry key="Application">
+          <value>
+            <set>
+              <option value="App" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -102,7 +135,7 @@
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/10.1.43" />
-          <option name="path" value="D:/Program Files/apache_tomcat/apache-tomcat-10.1.43" />
+          <option name="path" value="$PROJECT_DIR$/../../../Program Files/apache_tomcat/apache-tomcat-10.1.43" />
           <option name="version" value="10.1.43.0" />
         </TomcatInfo>
       </option>
@@ -125,7 +158,7 @@
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/10.1.43" />
-          <option name="path" value="D:/Program Files/apache_tomcat/apache-tomcat-10.1.43" />
+          <option name="path" value="$PROJECT_DIR$/../../../Program Files/apache_tomcat/apache-tomcat-10.1.43" />
           <option name="version" value="10.1.43.0" />
         </TomcatInfo>
       </option>
@@ -148,7 +181,7 @@
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/10.1.43" />
-          <option name="path" value="D:/Program Files/apache_tomcat/apache-tomcat-10.1.43" />
+          <option name="path" value="$PROJECT_DIR$/../../../Program Files/apache_tomcat/apache-tomcat-10.1.43" />
           <option name="version" value="10.1.43.0" />
         </TomcatInfo>
       </option>
@@ -161,17 +194,16 @@
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="Smart Tomcat.SpringMVC" />
-      <item itemvalue="Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD" />
       <item itemvalue="Smart Tomcat.Tomcat: SpringMVCSearch" />
+      <item itemvalue="Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="Smart Tomcat.Tomcat: SpringMVC_Product_Example_CRUD" />
-        <item itemvalue="Smart Tomcat.Tomcat: SpringMVCSearch" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4ad648bf-ced3-456d-ada1-4bb8bde499e6" name="Changes" comment="" />

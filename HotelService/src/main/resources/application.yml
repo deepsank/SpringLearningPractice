@@ -1,0 +1,45 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: HotelService
+  datasource:
+    url: jdbc:sqlite:D:\LearningProjects\SQLLite\Micro_HotelService_Learning.db
+#    username: root
+#    password: root
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
+  config:
+    import: optional:configserver:http://localhost:8085
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+#          audiences: api://default
+#          audiences: https://microservices-api
+          issuer-uri: https://dev-xmv044k57mtbkxo1.us.auth0.com/
+#No need of below configurations as they are now fetched from GitHub using ConfigServer
+
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    org.springframework.security: TRACE
+    org.springframework.security.web.server: TRACE
+    org.springframework.security.oauth2: TRACE
+    org.springframework.cloud.gateway: DEBUG

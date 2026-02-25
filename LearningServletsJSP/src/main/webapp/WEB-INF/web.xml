@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app >
+
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+<!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>first</servlet-name>
+    <servlet-class>com.deepsank.servlets.FirstServlet</servlet-class>
+  </servlet>
+  
+<!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>first</servlet-name>
+    <url-pattern>/web</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>servletUsingGenericServlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.UsingGenericServlet</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>servletUsingGenericServlet</servlet-name>
+    <url-pattern>/genericServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>servletUsingHttpServlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.UsingHTTPServlet</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>servletUsingHttpServlet</servlet-name>
+    <url-pattern>/httpServlet</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.RegisterServlet</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>successServlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.SuccessServlet</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>successServlet</servlet-name>
+    <url-pattern>/success</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>s1Servlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.S1</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>s1Servlet</servlet-name>
+    <url-pattern>/s1</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>s2Servlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.S2</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>s2Servlet</servlet-name>
+    <url-pattern>/s2</url-pattern>
+  </servlet-mapping>
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>servlet1Servlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.Servlet1</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>servlet1Servlet</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>servlet2Servlet</servlet-name>
+    <servlet-class>com.deepsank.servlets.Servlet2</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>servlet2Servlet</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>signUpServlet</servlet-name>
+    <servlet-class>com.deepsank.SignUp.Register</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>signUpServlet</servlet-name>
+    <url-pattern>/registerUser</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>URLRWServlet1</servlet-name>
+    <servlet-class>com.deepsank.servlets.URLRewriting1</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>URLRWServlet1</servlet-name>
+    <url-pattern>/urlrwservlet1</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>URLRWServlet2</servlet-name>
+    <servlet-class>com.deepsank.servlets.URLRewriting2</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>URLRWServlet2</servlet-name>
+    <url-pattern>/urlrwservlet2</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>hiddedfieldServlet1</servlet-name>
+    <servlet-class>com.deepsank.servlets.HiddenFieldS1</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>hiddedfieldServlet1</servlet-name>
+    <url-pattern>/hiddedfieldS1</url-pattern>
+  </servlet-mapping>
+
+  <!--  Servlet Declaration-->
+  <servlet>
+    <servlet-name>hiddedfieldServlet2</servlet-name>
+    <servlet-class>com.deepsank.servlets.HiddenFieldS2</servlet-class>
+  </servlet>
+
+  <!--  Mapping-->
+  <servlet-mapping>
+    <servlet-name>hiddedfieldServlet2</servlet-name>
+    <url-pattern>/hiddedfieldS2</url-pattern>
+  </servlet-mapping>
+
+
+  <display-name>Archetype Created Web Application</display-name>
+</web-app>
