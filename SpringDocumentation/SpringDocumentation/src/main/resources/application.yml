@@ -1,6 +1,8 @@
 
-
 spring:
+  shell:
+    interactive:
+      enabled: true
   application:
     name: sbdocs
   datasource:
@@ -11,22 +13,37 @@ spring:
     compose:
       lifecycle-management: START_ONLY
   ai:
+    ollama:
+      base-url: http://localhost:11434
+
+      chat:
+        options:
+          model: qwen2.5:1.5b
+
+      embedding:
+        model: nomic-embed-fast-custom
     vectorstore:
       pgvector:
+        initialize-schema: true
         index-type: HNSW
         distance-type: COSINE_DISTANCE
-        dimensions: 1536
-    google:
-      genai:
-        api-key: ${GEMINI_API_KEY}
-        chat:
-          options:
-            model: gemini-2.5-flash
-        embedding:
-          api-key: ${GEMINI_API_KEY}
-          text:
-            options:
-              model: gemini-embedding-001
+        dimensions: 768
+logging:
+  level:
+    root: debug
+#    google:
+#      genai:
+#        api-key: ${GEMINI_API_KEY}
+#        chat:
+#          options:
+##            model: gemini-2-flash
+#            model: gemini-embedding-001
+#
+#        embedding:
+#          api-key: ${GEMINI_API_KEY}
+#          text:
+#            options:
+#              model: gemini-embedding-001
   #spring.ai.google.genai.chat.options.temperature=0.7
   # Explicitly enable embeddings (optional, usually true by default)
   #spring.ai.model.embedding.text=google-genai
