@@ -25,26 +25,71 @@ public class ReferenceDocsLoader {
         this.vectorStore = vectorStore;
         this.jdbcClient = jdbcClient;
     }
-
     @PostConstruct
-    public void init(){
+    public void init() {
+
         int count = jdbcClient.sql("select count(*) from vector_store")
                 .query(Integer.class)
                 .single();
 
         logger.info("Current count of vector_store: {}", count);
-        if(count==0){
-            logger.info("Loading pdf document into the vector_store...");
+
+        if (count == 0) {
+
+            logger.info("Loading pdf document into vector_store...");
+
             var config = PdfDocumentReaderConfig.builder()
-                    .withPageExtractedTextFormatter(new ExtractedTextFormatter.Builder().withNumberOfBottomTextLinesToDelete(0)
-                            .withNumberOfTopPagesToSkipBeforeDelete(0).build())
+                    .withPageExtractedTextFormatter(
+                            new ExtractedTextFormatter.Builder()
+                                    .withNumberOfBottomTextLinesToDelete(0)
+                                    .withNumberOfTopPagesToSkipBeforeDelete(0)
+                                    .build())
                     .withPagesPerDocument(1)
                     .build();
+
             var pdfReader = new PagePdfDocumentReader(pdfResource, config);
-            var textSplitter = new TokenTextSplitter();
-            vectorStore.accept(textSplitter.apply(pdfReader.get()));
+            var textSplitter = new TokenTextSplitter(); // better chunk size
+
+            var documents = textSplitter.apply(pdfReader.get());
+
+            logger.info("Total chunks: {}", documents.size());
+
+            // 🔥 BATCH INSERT
+            int batchSize = 20;
+
+            for (int i = 0; i < documents.size(); i += batchSize) {
+
+                int end = Math.min(i + batchSize, documents.size());
+                var batch = documents.subList(i, end);
+
+                logger.info("Inserting batch {} to {}", i, end);
+
+                vectorStore.add(batch); // THIS is batch embedding
+            }
 
             logger.info("Application is ready...");
         }
     }
+
+//    @PostConstruct
+//    public void init(){
+//        int count = jdbcClient.sql("select count(*) from vector_store")
+//                .query(Integer.class)
+//                .single();
+//
+//        logger.info("Current count of vector_store: {}", count);
+//        if(count==0){
+//            logger.info("Loading pdf document into the vector_store...");
+//            var config = PdfDocumentReaderConfig.builder()
+//                    .withPageExtractedTextFormatter(new ExtractedTextFormatter.Builder().withNumberOfBottomTextLinesToDelete(0)
+//                            .withNumberOfTopPagesToSkipBeforeDelete(0).build())
+//                    .withPagesPerDocument(1)
+//                    .build();
+//            var pdfReader = new PagePdfDocumentReader(pdfResource, config);
+//            var textSplitter = new TokenTextSplitter();
+//            vectorStore.accept(textSplitter.apply(pdfReader.get()));
+//
+//            logger.info("Application is ready...");
+//        }
+//    }
 }
